@@ -13,8 +13,8 @@
       マッチングアプリです
     </p>
     <div class='store-btn'>
-      <%= link_to image_tag("app-store.svg", class:"apple-btn"), "#" %>
-      <%= link_to image_tag("google-play.png", class:"google-btn"), "#" %>
+      <%# <%= link_to image_tag("app-store.svg", class:"apple-btn"), "#" %> 
+      <%# <%= link_to image_tag("google-play.png", class:"google-btn"), "#" %> 
     </div>
   </div>
   <%# /画面上部の「人生を変えるフリマアプリ」帯部分  %>
@@ -24,9 +24,9 @@
 
   <%# 商品一覧 %>
   <div class='item-contents'>
-    <%# <h2 class='title'>文字入れられる</h2> %>
+     <h2 class='title'>               </h2> 
     <div class="subtitle" >
-      新規投稿商品
+      新着情報
     </div>
     <ul class='item-lists'>
 
@@ -53,7 +53,7 @@
             <%= item.name %>
           </h3>
           <div class='item-price'>
-            <span><%= item.price %>円<br><%= item.del_fee.name %></span>
+            <span><%= item.explaination %> <br><%#= item.del_fee.name %></span>
             <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
               <span class='star-count'>0</span>
@@ -89,7 +89,7 @@
   <%# /商品一覧 %>
     <div class='select-reason-contents'>
     <h2 class='title'>
-      FURIMAが選ばれる3つの理由
+      OneCar が選ばれる3つの理由
     </h2>
     <ul class='reason-lists'>
       <li class='list'>
