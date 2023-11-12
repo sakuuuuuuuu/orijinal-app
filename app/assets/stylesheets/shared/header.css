@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  
 
 
 }
@@ -10,8 +9,8 @@
   padding: 2vh 15vw;
   display: flex;
   flex-direction: column;
-   position: fixed 
-
+  position: fixed; 
+  z-index: 20;
 }
 
 .search-bar-contents {
