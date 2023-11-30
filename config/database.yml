@@ -66,7 +66,7 @@ development:
   username: root
   password:
   host: localhost
-  database: orijinal_app_development
+  database: furima_39461_development
 
 test:
   <<: *default
@@ -74,7 +74,7 @@ test:
   username: root
   password:
   host: localhost
-  database: orijinal_app_test
+  database: furima_39461_test
 
 production:
   <<: *default
