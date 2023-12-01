@@ -1,7 +1,5 @@
 <%= render "shared/header" %>
-  
 <div class='main'>
-  <div class=wrl>
 
   <%# 画面上部の「人生を変えるフリマアプリ」帯部分 %>
   <div class='title-contents'>
@@ -25,7 +23,7 @@
 
 
   <%# 商品一覧 %>
-
+  <%# <% <div class=wrl> %> 
   <div class='item-contents'>
      <h2 class='title'>               </h2> 
     <div class="subtitle" >
@@ -154,45 +152,45 @@
   <%# /画面中央の「会員数日本一位」帯部分 %>
 
   <%# FURIMAの特徴 %>
-  <div class='feature-contents'>
-    <h2 class='title'>
-      FURIMAの特徴
-    </h2>
-    <ul class='feature-lists'>
-      <li class='list'>
-        <%= image_tag "furima-intro04.png", class:"list-pict" %>
-        <h3 class='feature-list-text'>
-          簡単に売り買いできる
-        </h3>
-        <p class='feature-list-description'>
-          スマホひとつで、いつでもどこでも簡単に出品・購入が可能！
-        </p>
-      </li>
-      <li class='list'>
-        <%= image_tag "furima-intro05.png", class:"list-pict" %>
-        <h3 class='feature-list-text'>
-          売上金は即日振込みに対応
-        </h3>
-        <p class='feature-list-description'>
-          午前9時までに振込を依頼いただければ、翌日に指定の口座に入金いたします。
-        </p>
-      </li>
-      <li class='list'>
-        <%= image_tag "furima-intro06.png", class:"list-pict" %>
-        <h3 class='feature-list-text'>
-          様々な支払いに対応
-        </h3>
-        <p class='feature-list-description'>
-          お支払いは、クレジットカードだけでなく、ポイントや売上金など多彩な方法があります。
-        </p>
-      </li>
-    </ul>
-  </div>
+  <%# <div class='feature-contents'> %>
+    <%# <h2 class='title'> %>
+      <%# FURIMAの特徴 %>
+    <%# </h2> %>
+    <%# <ul class='feature-lists'> %>
+      <%# <li class='list'> %>
+        <%# <%= image_tag "furima-intro04.png", class:"list-pict" %> %>
+        <%# <h3 class='feature-list-text'> %>
+          <%# 簡単に売り買いできる %>
+        <%# </h3> %>
+        <%# <p class='feature-list-description'> %>
+          <%# スマホひとつで、いつでもどこでも簡単に出品・購入が可能！ %>
+        <%# </p> %>
+      <%# </li> %>
+      <%# <li class='list'> %>
+        <%# <%= image_tag "furima-intro05.png", class:"list-pict" %> %>
+        <%# <h3 class='feature-list-text'> %>
+          <%# 売上金は即日振込みに対応 %>
+        <%# </h3> %>
+        <%# <p class='feature-list-description'> %>
+          <%# 午前9時までに振込を依頼いただければ、翌日に指定の口座に入金いたします。 %>
+        <%# </p> %>
+      <%# </li> %>
+      <%# <li class='list'> %>
+        <%# <%= image_tag "furima-intro06.png", class:"list-pict" %> %>
+        <%# <h3 class='feature-list-text'> %>
+          <%# 様々な支払いに対応 %>
+        <%# </h3> %>
+        <%# <p class='feature-list-description'> %>
+          <%# お支払いは、クレジットカードだけでなく、ポイントや売上金など多彩な方法があります。 %>
+        <%# </p> %>
+      <%# </li> %>
+    <%# </ul> %>
+  <%# </div> %>
   <%# /FURIMAの特徴 %>
-</div>
+<%# </div> %>
 <%= link_to(new_item_path,data: { turbo: false }, class: 'purchase-btn') do %>
   <span class='purchase-btn-text'>出品する</span>
   <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
 <% end %>
-<%= render "shared/footer" %>
-</div>
+<%# <%= render "shared/footer" %> %>
+<%# </div> %>
