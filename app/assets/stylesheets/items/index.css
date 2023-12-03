@@ -5,6 +5,8 @@ a {
 
 .main {
   background: #f8f8f8;
+  position: absolute;
+  top: 200px;
   
   
 }
