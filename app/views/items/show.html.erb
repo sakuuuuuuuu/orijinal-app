@@ -41,20 +41,20 @@
 
     <% if user_signed_in? %>
     
-    <%# <% end %> 
-     <% if @item.not_sold_out? %>
-       <% if current_user == @item.user %>  <%#PurchaseRecord.exists?(item_id: @item.id) %>
+    <% end %> 
+      <% if @item.not_sold_out? %> 
+       <% if current_user == @item.user  %><%#PurchaseRecord.exists?(item_id: @item.id) %>
        <%= link_to "商品の編集", edit_item_path, method: :get, class: "item-red-btn" %>
 
      <p class="or-text">or</p> 
     <%= link_to "削除", item_path(@item.id), data: { turbo_method: :delete } , class:"item-destroy" %>
-      <% elsif @item.not_sold_out? && @item.user != current_user %>
+      <% if @item.not_sold_out? && @item.user != current_user %>
   <%= link_to "購入画面に進む", item_purchase_records_path(@item.id) ,class:"item-red-btn"%>
 
     <%# <p class="or-text">or</p> %>
     <%# <%= link_to "削除", item_path(@item.id), data: { turbo_method: :delete } , class:"item-destroy" %>
-     <% end %>
-     <% end  %>
+      <% end %> 
+      <% end  %>
     <% end %>
 
     <%# % binding.pry %> 
@@ -161,7 +161,7 @@
   <a href="#" class="another-item"><%= @item.category.name %>をもっと見る</a>
 </div>
 
-<%= render "shared/footer" %>
+<%# <%= render "shared/footer" %> 
 
 
 
