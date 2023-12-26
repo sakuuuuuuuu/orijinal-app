@@ -14,6 +14,4 @@ Rails.application.routes.draw do
   # root to: 'purchase_records#index'
   resources :purchase_records, only:[:create,:index]
   end
-
-
 end
