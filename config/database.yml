@@ -68,6 +68,8 @@ development:
   host: localhost
   database: furima_39461_development
 
+
+  
 test:
   <<: *default
   adapter: mysql2
