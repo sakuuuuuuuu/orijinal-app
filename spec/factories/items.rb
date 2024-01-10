@@ -10,6 +10,7 @@ FactoryBot.define do
     price { 1000 } # 価格を適切な値に設定
     
     
+
     association :user 
 
     after(:build) do |message|
