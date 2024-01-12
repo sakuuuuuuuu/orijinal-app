@@ -9,13 +9,10 @@ FactoryBot.define do
     days_until_shipping_id { 2 } # 発送までの日数IDに適切な値を設定
     price { 1000 } # 価格を適切な値に設定
     
-    
-
     association :user 
 
     after(:build) do |message|
       message.image.attach(io: File.open('public/images/a.png'), filename: 'a.png') 
     end
-
   end
 end
