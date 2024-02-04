@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   # resources :users, only: [:edit, :update]
   resources :users
   resources :items do
-
   # root to: 'purchase_records#index'
   resources :purchase_records, only:[:create,:index]
   end
