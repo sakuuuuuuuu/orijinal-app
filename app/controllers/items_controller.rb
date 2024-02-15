@@ -4,8 +4,6 @@ class ItemsController < ApplicationController
   before_action :contributor_confirmation, only: [:edit, :destroy]
   before_action :sold_out_confirmation, only: [:edit]
 
-
-
   def index  
 
      @items = Item.order("created_at DESC")
@@ -57,20 +55,15 @@ end
   def item_params
     params.require(:item).permit(:image,:name, :explaination, :category_id, :condition_id,:del_fee_id,:prefecture_id,:days_until_shipping_id,:price,).merge(user_id: current_user.id)
   end
-
-
   def contributor_confirmation
     redirect_to root_path unless current_user == @item.user
   end
-
   def set_item
     @item = Item.find(params[:id])
   end
-
   def sold_out_confirmation
     redirect_to root_path unless @item.not_sold_out?
   end
-
 end
 
 
