@@ -84,3 +84,8 @@ class PurchaseRecordsController < ApplicationController
 end
 
 
+
+
+
+
+
