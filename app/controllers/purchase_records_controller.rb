@@ -5,14 +5,14 @@ class PurchaseRecordsController < ApplicationController
     before_action :contributor_confirmation2, only: [:index]
     before_action :sold_out_confirmation, only: [:index]
     before_action :authenticate_user!, only: [:index]
-
-
   def index
     gon.public_key = ENV["PAYJP_PUBLIC_KEY"]
     @form_object = FormObject.new # ←新しくインスタンスを生成するnewメソッド
     
   end
 
+
+  
   # def new
   #   @form_object = Formobject.new
   # end
@@ -82,6 +82,9 @@ class PurchaseRecordsController < ApplicationController
   #   end
   # end
 end
+
+
+
 
 
 
