@@ -11,8 +11,6 @@ class PurchaseRecordsController < ApplicationController
     
   end
 
-
-  
   # def new
   #   @form_object = Formobject.new
   # end
