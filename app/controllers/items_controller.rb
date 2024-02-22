@@ -12,7 +12,6 @@ class ItemsController < ApplicationController
     @item = Item.new
   end
 
-
   def create
     @item = Item.new(item_params)
     
@@ -32,6 +31,7 @@ def edit
   #  redirect_to root_path if current_user == @item.user
   #  sold_out_confirmation
 end
+
 
 def update
   if @item.update(item_params)
