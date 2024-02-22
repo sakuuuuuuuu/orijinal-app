@@ -5,7 +5,6 @@ class ItemsController < ApplicationController
   before_action :sold_out_confirmation, only: [:edit]
 
   def index  
-
      @items = Item.order("created_at DESC")
   end
 
@@ -14,7 +13,6 @@ class ItemsController < ApplicationController
   end
 
 
-  
   def create
     @item = Item.new(item_params)
     
