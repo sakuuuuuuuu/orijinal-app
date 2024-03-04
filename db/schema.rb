@@ -33,15 +33,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_28_081307) do
     t.datetime "created_at", null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
-
-
   create_table "active_storage_variant_records", charset: "utf8", force: :cascade do |t|
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
-
-  
   create_table "items", charset: "utf8", force: :cascade do |t|
     t.string "name", null: false
     t.text "explaination", null: false
