@@ -8,8 +8,6 @@ FactoryBot.define do
     # user_id { 1 }
     # item_id { 1 }
     token { 'token123' }
-
-    
   end
 end
 
