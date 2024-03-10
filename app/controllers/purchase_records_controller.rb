@@ -1,7 +1,6 @@
 class PurchaseRecordsController < ApplicationController
   # before_action :contributor_confirmation, only: [:index]
     before_action :set_item, only: [:index, :create]
-    # before_action :contributor_confirmation, only: [:index]
     before_action :contributor_confirmation2, only: [:index]
     before_action :sold_out_confirmation, only: [:index]
     before_action :authenticate_user!, only: [:index]
