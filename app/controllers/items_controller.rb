@@ -26,28 +26,27 @@ class ItemsController < ApplicationController
   
  end
 
-def edit
+ def edit
   #  contributor_confirmation
   #  redirect_to root_path if current_user == @item.user
   #  sold_out_confirmation
-end
+ end
 
-
-def update
+ def update
   if @item.update(item_params)
     redirect_to item_path
   else
     render :edit, status: :unprocessable_entity
   end
-end
+ end
 
-def destroy
+ def destroy
   if @item.destroy
     redirect_to root_path
   else
     render :edit, status: :unprocessable_entity
   end
-end
+ end
 
 
 
