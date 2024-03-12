@@ -48,8 +48,6 @@ class ItemsController < ApplicationController
   end
  end
 
-
-
   private
   def item_params
     params.require(:item).permit(:image,:name, :explaination, :category_id, :condition_id,:del_fee_id,:prefecture_id,:days_until_shipping_id,:price,).merge(user_id: current_user.id)
@@ -63,7 +61,7 @@ class ItemsController < ApplicationController
   def sold_out_confirmation
     redirect_to root_path unless @item.not_sold_out?
   end
-end
+ end
 
 
 
