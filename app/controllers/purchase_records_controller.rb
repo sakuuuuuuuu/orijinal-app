@@ -7,7 +7,6 @@ class PurchaseRecordsController < ApplicationController
   def index
     gon.public_key = ENV["PAYJP_PUBLIC_KEY"]
     @form_object = FormObject.new # ←新しくインスタンスを生成するnewメソッド
-    
   end
 
   # def new
