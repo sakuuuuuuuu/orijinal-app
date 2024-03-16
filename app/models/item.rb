@@ -10,8 +10,6 @@ class Item < ApplicationRecord
   belongs_to :days_until_shipping
 
 
-
-
   has_one :purchase_record # 商品購入機能実装で復活させる
   belongs_to :user
   has_one_attached :image
