@@ -5,7 +5,6 @@ class FormObject
 
     # validates :item,presence: true
     # validates :user,presence: true
-
     validates :zip,presence: true,format: { with: /\A\d{3}-\d{4}\z/, message: "は正しい形式で入力してください" }
     validates :prefecture_id,numericality: {other_than: 1, message: "can't be blank"}
     validates :city,presence: true
