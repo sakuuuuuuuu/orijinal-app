@@ -11,13 +11,10 @@ class FormObject
     validates :street,presence: true   
     # validates :building
     validates :phone,presence: true, format: { with: /\A\d{10,11}\z/, message: "は10桁以上11桁以内の半角数字で入力してください" }
-
     #validates :purchase_record,presence: true
     validates :user_id,presence: true
     validates :item_id,presence: true
     validates :token,presence: true
-
-  # ここにバリデーションの処理を書く
 
   def save
     # 各テーブルにデータを保存する処理を書く
