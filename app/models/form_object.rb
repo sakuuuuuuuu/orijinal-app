@@ -1,8 +1,6 @@
 class FormObject
   include ActiveModel::Model
    attr_accessor :item_id,:user_id,:zip,:prefecture_id,:city,:street,:building,:phone ,:token # hoge,:fuga...
-
-
     # validates :item,presence: true
     # validates :user,presence: true
     validates :zip,presence: true,format: { with: /\A\d{3}-\d{4}\z/, message: "は正しい形式で入力してください" }
