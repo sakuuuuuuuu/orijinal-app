@@ -22,7 +22,6 @@ class Item < ApplicationRecord
   # validates :price, format: { with: /\A[0-9]+\z/, message: "Price is not a number" }
   # 上記記述は下記validates :price, numericality〜の記述に含まれているため記述不要
   
-
   #下記の選択が「---」の時は保存できないようにする
   validates :category_id, numericality: { other_than: 1, message: "can't be blank"} 
   validates :condition_id, numericality: { other_than: 1, message: "can't be blank"} 
@@ -30,9 +29,6 @@ class Item < ApplicationRecord
   validates :prefecture_id, numericality: { other_than: 1, message: "can't be blank"} 
   validates :days_until_shipping_id, numericality: { other_than: 1, message: "can't be blank"} 
   validates :price, numericality:{only_integer: true, greater_than_or_equal_to: 300, less_than_or_equal_to: 9999999}
-
-
-
 
   # validates :category_id, presence: true
   # validates :condition_id, presence: true
