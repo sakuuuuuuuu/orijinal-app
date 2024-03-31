@@ -62,5 +62,4 @@ class ItemsController < ApplicationController
     redirect_to root_path unless @item.not_sold_out?
   end
  end
-
 ;
