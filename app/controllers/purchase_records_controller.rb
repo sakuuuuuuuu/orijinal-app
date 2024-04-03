@@ -56,9 +56,7 @@ class PurchaseRecordsController < ApplicationController
   def sold_out_confirmation
     redirect_to root_path unless @item.not_sold_out?
   end
-
-
-
+  
   # def contributor_confirmation2
   #   if current_user != @item&.user
   #     flash[:alert] = "自身が出品した商品の商品購入ページにはアクセスできません"
